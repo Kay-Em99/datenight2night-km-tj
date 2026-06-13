@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Date Night 2Night — KM × TJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section id="gate" class="gate-screen">
+      <div class="gate-card">
+        <div class="tiny-label">private invitation</div>
+        <h1>Before you enter...</h1>
+        <p class="question">What does Karsh think is Tiju's best feature?</p>
+        <input id="passwordInput" type="password" placeholder="Type the answer here" autocomplete="off" />
+        <button id="submitBtn">Submit</button>
+        <p id="error" class="error" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="invite" class="invite-screen hidden">
+      <div class="toolbar no-print">
+        <button onclick="window.print()">Save as PDF / Print</button>
+        <button onclick="lockAgain()">Lock Again</button>
+      </div>
+
+      <article class="flyer" id="flyer">
+        <div class="stamp">KM × TJ</div>
+
+        <header>
+          <p class="eyebrow">you & me</p>
+          <h2>Date Night<br><span>Tonight</span></h2>
+          <p class="subtitle">A comfort-first, heart-reset invitation for two.</p>
+        </header>
+
+        <section class="illustration" aria-label="Date night illustration">
+          <svg viewBox="0 0 900 460" role="img">
+            <rect x="40" y="270" width="820" height="58" rx="28" class="rug"/>
+            <rect x="150" y="150" width="600" height="135" rx="44" class="couch"/>
+            <rect x="180" y="128" width="150" height="92" rx="28" class="pillow one"/>
+            <rect x="570" y="128" width="150" height="92" rx="28" class="pillow two"/>
+            <rect x="300" y="215" width="300" height="22" rx="11" class="tabletop"/>
+            <path d="M332 237 L308 350" class="tableleg"/>
+            <path d="M568 237 L592 350" class="tableleg"/>
+            <ellipse cx="450" cy="352" rx="190" ry="22" class="shadow"/>
+
+            <path d="M386 165 C360 220 369 245 404 245 C439 245 448 220 422 165 Z" class="glass"/>
+            <path d="M478 165 C452 220 461 245 496 245 C531 245 540 220 514 165 Z" class="glass"/>
+            <path d="M376 198 C392 214 416 214 432 198" class="wine"/>
+            <path d="M468 198 C484 214 508 214 524 198" class="wine"/>
+            <line x1="404" y1="245" x2="404" y2="300" class="stem"/>
+            <line x1="496" y1="245" x2="496" y2="300" class="stem"/>
+            <line x1="374" y1="300" x2="434" y2="300" class="base"/>
+            <line x1="466" y1="300" x2="526" y2="300" class="base"/>
+
+            <circle cx="585" cy="205" r="54" class="pizza-plate"/>
+            <path d="M558 174 L620 198 L569 236 Z" class="pizza"/>
+            <circle cx="584" cy="195" r="6" class="pep"/>
+            <circle cx="598" cy="207" r="5" class="pep"/>
+            <circle cx="575" cy="215" r="5" class="pep"/>
+
+            <rect x="218" y="250" width="145" height="82" rx="10" class="laptop"/>
+            <rect x="198" y="332" width="185" height="16" rx="7" class="laptop-base"/>
+            <text x="290" y="300" text-anchor="middle" class="apple">♡</text>
+
+            <circle cx="275" cy="210" r="12" class="cloud"/>
+            <circle cx="250" cy="190" r="17" class="cloud"/>
+            <rect x="145" y="95" width="240" height="72" rx="32" class="cloud"/>
+            <text x="265" y="138" text-anchor="middle" class="cloudtext">some work required</text>
+
+            <path d="M673 86 C673 71 693 68 701 82 C709 68 729 71 729 86 C729 107 701 122 701 122 C701 122 673 107 673 86Z" class="heart"/>
+            <path d="M190 68 C190 59 202 57 207 65 C212 57 224 59 224 68 C224 80 207 90 207 90 C207 90 190 80 190 68Z" class="heart small"/>
+          </svg>
+        </section>
+
+        <section class="message">
+          <p>Hi Tiju,</p>
+          <p>Things have been rough, and date night is what I believe is the key to uplifting our relationship.</p>
+          <p>I’d like the record to be set straight, starting with this one. hehe.</p>
+        </section>
+
+        <section class="details">
+          <div>
+            <span>When</span>
+            <strong>Sunday</strong>
+          </div>
+          <div>
+            <span>Time</span>
+            <strong>10:30 PM IST / 10:00 AM PDT</strong>
+          </div>
+          <div>
+            <span>Dress code</span>
+            <strong>Comfort + your smile</strong>
+          </div>
+        </section>
+
+        <footer>
+          <p>XoXo,</p>
+          <p class="signature">KM</p>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
