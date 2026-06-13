@@ -18,7 +18,7 @@ function unlock() {
     invite.classList.remove("hidden");
     error.textContent = "";
   } else {
-    error.textContent = "Not quite. Hint: it is the answer Karsh would say instantly.";
+    error.textContent = "Not quite. Hint: What was something that I saw when we met for the first time? I couldn't see you smile because you were wearing a mask. What did I see?";
     input.select();
   }
 }
